@@ -49,7 +49,7 @@ do
     L["OPTIONS_THREAT_USE_AGGRO_FLASH"] = "Enable aggro flash"
     L["OPTIONS_THREAT_USE_AGGRO_FLASH_DESC"] = "Enables the -AGGRO- flash animation on the nameplates when gaining aggro as dps."
 
-    L["OPTIONS_THREAT_USE_LEGACY_THREATLIB"] = "Use Legacy ThreatLib"
+    L["OPTIONS_THREAT_USE_LEGACY_THREATLIB"] = "Use Legacy ThreatLib (Need addon KTMClassic)"
     L["OPTIONS_THREAT_USE_LEGACY_THREATLIB_DESC"] = "Use modified LibThreatClassic2(Private server or Hermesproxy)."
     
     L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE"] = "Enable Icon Customization"

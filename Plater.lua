@@ -77,12 +77,14 @@ local LDB = LibStub ("LibDataBroker-1.1", true)
 local LDBIcon = LDB and LibStub ("LibDBIcon-1.0", true)
 
 -- Legacy Threatlib
-local ThreatLib = LibStub:GetLibrary ("LibThreatClassic2", true) -- https://www.curseforge.com/wow/addons/libthreatclassic2
-local UnitDetailedThreatSituation = function (unit, mob)
+local LTC2 = LibStub:GetLibrary("LibThreatClassic2") 
+assert(LTC2, "ThreatClassic2 requires LibThreatClassic2")
+
+local UnitDetailedThreatSituation = function(unit, mob)
 	if Plater.db.profile.use_legacy_threatlib then
-		return ThreatLib:UnitDetailedThreatSituation (unit, mob)
+		return LTC2:UnitDetailedThreatSituation(unit, mob)
     else
-		return UnitDetailedThreatSituation (unit, mob)
+		return UnitDetailedThreatSituation(unit, mob)
 	end
 end
 
