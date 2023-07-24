@@ -13575,7 +13575,15 @@ end
 			name = "OPTIONS_THREAT_USE_AGGRO_GLOW",
 			desc = "OPTIONS_THREAT_USE_AGGRO_GLOW_DESC",
 		},
-		
+		{
+			type = "toggle",
+			get = function() return Plater.db.profile.use_legacy_threatlib end,
+			set = function (self, fixedparam, value) 
+				Plater.db.profile.use_legacy_threatlib = value
+			end,
+			name = "OPTIONS_THREAT_USE_LEGACY_THREATLIB",
+			desc = "OPTIONS_THREAT_USE_LEGACY_THREATLIB_DESC",
+		},	
 	}
 	
 	for _, t in ipairs (thread_options2) do

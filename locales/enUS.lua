@@ -48,6 +48,9 @@ do
     L["OPTIONS_THREAT_USE_AGGRO_GLOW_DESC"] = "Enables the healthbar glow on the nameplates when gaining aggro as dps or losing aggro as tank."
     L["OPTIONS_THREAT_USE_AGGRO_FLASH"] = "Enable aggro flash"
     L["OPTIONS_THREAT_USE_AGGRO_FLASH_DESC"] = "Enables the -AGGRO- flash animation on the nameplates when gaining aggro as dps."
+
+    L["OPTIONS_THREAT_USE_LEGACY_THREATLIB"] = "Use Legacy ThreatLib (Reload Required)"
+    L["OPTIONS_THREAT_USE_LEGACY_THREATLIB_DESC"] = "Use modified LibThreatClassic2(Private server or Hermesproxy)."
     
     L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE"] = "Enable Icon Customization"
     L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE_DESC"] = "If this option is disabled, Plater won't modify the spell icon, leaving it for scripts to do."

@@ -27,4 +27,6 @@
 	
 	<Include file="LibTranslit-1.0\LibTranslit-1.0.xml"/>
 	<Include file="DF\load.xml"/>
+
+	<Include file="LibThreatClassic2\lib.xml"/>
 </Ui>

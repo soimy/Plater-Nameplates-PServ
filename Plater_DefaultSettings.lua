@@ -3074,6 +3074,7 @@ PLATER_DEFAULT_SETTINGS = {
 		
 		show_aggro_flash = false,
 		show_aggro_glow = true,
+		use_legacy_threatlib = true,
 		
 		tank = {
 			colors = {

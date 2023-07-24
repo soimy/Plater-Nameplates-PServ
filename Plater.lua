@@ -46,7 +46,7 @@ local xpcall = xpcall
 local InCombatLockdown = InCombatLockdown
 local UnitIsPlayer = UnitIsPlayer
 local UnitClassification = UnitClassification
-local UnitDetailedThreatSituation = UnitDetailedThreatSituation
+-- local UnitDetailedThreatSituation = UnitDetailedThreatSituation
 local UnitCanAttack = UnitCanAttack
 --local IsSpellInRange = IsSpellInRange --200 locals limit
 local abs = math.abs
@@ -75,6 +75,16 @@ local LibRangeCheck = LibStub:GetLibrary ("LibRangeCheck-2.0") -- https://www.cu
 local LibTranslit = LibStub:GetLibrary ("LibTranslit-1.0") -- https://github.com/Vardex/LibTranslit
 local LDB = LibStub ("LibDataBroker-1.1", true)
 local LDBIcon = LDB and LibStub ("LibDBIcon-1.0", true)
+
+-- Legacy Threatlib
+local ThreatLib = LibStub:GetLibrary ("LibThreatClassic2", true) -- https://www.curseforge.com/wow/addons/libthreatclassic2
+local UnitDetailedThreatSituation = function (unit, mob)
+	if Plater.db.profile.use_legacy_threatlib then
+		return ThreatLib:UnitDetailedThreatSituation (unit, mob)
+    else
+		return UnitDetailedThreatSituation (unit, mob)
+	end
+end
 
 local addonId, platerInternal = ...
 local _ = nil
